@@ -34,7 +34,7 @@ def rgba_replacer(match, factor, threshold):
     return f"{prefix}({nr}, {ng}, {nb}{rest})"
 
 def main():
-    parser = argparse.ArgumentParser(description="Darken Hex and RGB/RGBA colors in a GNOME CSS file.")
+    parser = argparse.ArgumentParser(description="Darken Hex and RGB/RGBA colors in a CSS file.")
     parser.add_argument("input", help="Original CSS file")
     parser.add_argument("-o", "--output", default="darker_theme.css", help="Output CSS file")
     parser.add_argument("-f", "--factor", type=float, default=0.3, help="Darkening factor (0.0 to 1.0). Ex: 0.3 = 30% darker")
